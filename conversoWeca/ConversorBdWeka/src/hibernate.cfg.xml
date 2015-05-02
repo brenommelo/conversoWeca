@@ -3,73 +3,69 @@
 <hibernate-configuration>
     <session-factory>
         
-        <!-- <property name="hibernate.connection.datasource">jdbc/Diagnostico</property>
-       Driver do BD de conexão -->
+        <!--<property name="hibernate.connection.datasource">jdbc/Diagnostico</property>-->
+        <!-- Driver do BD de conexão -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <!--Dialect do banco de dados--> 
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>        
         <!--Endereço de conexão--> 
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/TELESSAUDE</property>        
+        <!--Usuário--> 
         <property name="hibernate.connection.username">postgres</property>        
+        <!--Senha--> 
         <property name="hibernate.connection.password">senha</property>
-        <!--        <property name="hibernate.default_schema" >teletransferencia</property>-->
-        
-        <!-- C3P0 connection pool. -->  
-        <!--        <property name="c3p0.min_size">1</property>  
-        <property name="c3p0.max_size">2</property>  
-        <property name="c3p0.timeout">2400</property>  
-        <property name="c3p0.acquire_increment">1</property>  
-        <property name="c3p0.max_statements">30</property>  -->
-  
         <!-- Exibe comandos SQL na saída padrão. -->  
-        <property name="show_sql">true</property>  
+        <property name="show_sql">false</property>  
         <property name="use_sql_comments">false</property>  
-        <property name="hibernate.format_sql">true</property>  
+        <property name="hibernate.format_sql">false</property>  
         <property name="current_session_context_class">thread</property>    
         
         <property name="hibernate.hbm2ddl.auto">none</property>
-
-        <mapping class="conversorbdweka.entidades.origem.Categoria" />
-        <mapping class="conversorbdweka.entidades.origem.Cidade" />
-        <mapping class="conversorbdweka.entidades.origem.Cliente" />
-        <mapping class="conversorbdweka.entidades.origem.Configuracao" />
-        <mapping class="conversorbdweka.entidades.origem.Contato" />
-        <mapping class="conversorbdweka.entidades.origem.ConteudoExame" />
-        <mapping class="conversorbdweka.entidades.origem.CreditoPlantao" />
-        <mapping class="conversorbdweka.entidades.origem.DiscussaoCaso" />
-        <mapping class="conversorbdweka.entidades.origem.Endereco" />
-        <mapping class="conversorbdweka.entidades.origem.Especialidade" />
-        <mapping class="conversorbdweka.entidades.origem.Especialista" />
-        <mapping class="conversorbdweka.entidades.origem.Estado" />
-        <mapping class="conversorbdweka.entidades.origem.Exame" />
-        <mapping class="conversorbdweka.entidades.origem.ExameCorrompido" />
-        <mapping class="conversorbdweka.entidades.origem.FraseEspecialistaEspecialidade" />
-        <mapping class="conversorbdweka.entidades.origem.HistoricoClinico" />
-        <mapping class="conversorbdweka.entidades.origem.HorarioPlantao" />
-        <mapping class="conversorbdweka.entidades.origem.Laudo" />
-        <mapping class="conversorbdweka.entidades.origem.ModeloConteudoExame" />
-        <mapping class="conversorbdweka.entidades.origem.ModeloHistoricoClinico" />
-        <mapping class="conversorbdweka.entidades.origem.ModeloLaudo" />
-        <mapping class="conversorbdweka.entidades.origem.OrgaoEmissor" />
-        <mapping class="conversorbdweka.entidades.origem.Paciente" />
-        <mapping class="conversorbdweka.entidades.origem.Pais" />
-        <mapping class="conversorbdweka.entidades.origem.PerfilUsuario" />
-        <mapping class="conversorbdweka.entidades.origem.Plantao" />
-        <mapping class="conversorbdweka.entidades.origem.PontoRemoto" />
-        <mapping class="conversorbdweka.entidades.origem.Prioridade" />
-        <mapping class="conversorbdweka.entidades.origem.Status" />
-        <mapping class="conversorbdweka.entidades.origem.TipoConteudoExame" />
-        <mapping class="conversorbdweka.entidades.origem.TipoExame" />
-        <mapping class="conversorbdweka.entidades.origem.TipoLaudo" />
-        <mapping class="conversorbdweka.entidades.origem.Usuario" />
+        <!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+        <property name="connection_pool_size">1</property>
         
-        <mapping class="conversorbdweka.entidades.origem.LaudoMinnesota" />
-        <mapping class="conversorbdweka.entidades.origem.EcgAnalys" />
-        <mapping class="conversorbdweka.entidades.origem.MinnesotaCode" />
-        <mapping class="conversorbdweka.entidades.origem.MinnesotaDict" />
-        <mapping class="conversorbdweka.entidades.origem.MinnesotaGroup" />
-        <mapping class="conversorbdweka.entidades.origem.ReportEcgAnalys" />
+        <!-- Classes que são mapeadas no hibernate  -->
+        <!-- Utilizadas pelo diagnostico -->
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Categoria" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Cidade" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Cliente" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Configuracao" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Contato" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.ConteudoExame" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.CreditoPlantao" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.DiscussaoCaso" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Endereco" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Especialidade" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Especialista" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Estado" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Exame" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.ExameCorrompido" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.FraseEspecialistaEspecialidade" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.HistoricoClinico" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.HorarioPlantao" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Laudo" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.ModeloConteudoExame" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.ModeloHistoricoClinico" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.ModeloLaudo" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.OrgaoEmissor" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Paciente" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Pais" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.PerfilUsuario" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Plantao" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.PontoRemoto" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Prioridade" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Status" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.TipoConteudoExame" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.TipoExame" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.TipoLaudo" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.entity.Usuario" />
+        <!--classes do glagow minnesota-->
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.EcgAnalys" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.MinnesotaCode" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.MinnesotaGroup" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.MinnesotaDict" />
+        <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.LaudoMinnesota" />
         
-        
+                      
     </session-factory>
 </hibernate-configuration>
