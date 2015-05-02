@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        <!-- <property name="hibernate.connection.datasource">jdbc/Diagnostico</property>
+       Driver do BD de conexão -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!--Dialect do banco de dados--> 
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>        
+        <!--Endereço de conexão--> 
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/TELESSAUDE</property>        
+        <property name="hibernate.connection.username">postgres</property>        
+        <property name="hibernate.connection.password">senha</property>
+        <!--        <property name="hibernate.default_schema" >teletransferencia</property>-->
+        
+        <!-- C3P0 connection pool. -->  
+        <!--        <property name="c3p0.min_size">1</property>  
+        <property name="c3p0.max_size">2</property>  
+        <property name="c3p0.timeout">2400</property>  
+        <property name="c3p0.acquire_increment">1</property>  
+        <property name="c3p0.max_statements">30</property>  -->
+  
+        <!-- Exibe comandos SQL na saída padrão. -->  
+        <property name="show_sql">true</property>  
+        <property name="use_sql_comments">false</property>  
+        <property name="hibernate.format_sql">true</property>  
+        <property name="current_session_context_class">thread</property>    
+        
+        <property name="hibernate.hbm2ddl.auto">none</property>
+
+        <mapping class="conversorbdweka.entidades.origem.Categoria" />
+        <mapping class="conversorbdweka.entidades.origem.Cidade" />
+        <mapping class="conversorbdweka.entidades.origem.Cliente" />
+        <mapping class="conversorbdweka.entidades.origem.Configuracao" />
+        <mapping class="conversorbdweka.entidades.origem.Contato" />
+        <mapping class="conversorbdweka.entidades.origem.ConteudoExame" />
+        <mapping class="conversorbdweka.entidades.origem.CreditoPlantao" />
+        <mapping class="conversorbdweka.entidades.origem.DiscussaoCaso" />
+        <mapping class="conversorbdweka.entidades.origem.Endereco" />
+        <mapping class="conversorbdweka.entidades.origem.Especialidade" />
+        <mapping class="conversorbdweka.entidades.origem.Especialista" />
+        <mapping class="conversorbdweka.entidades.origem.Estado" />
+        <mapping class="conversorbdweka.entidades.origem.Exame" />
+        <mapping class="conversorbdweka.entidades.origem.ExameCorrompido" />
+        <mapping class="conversorbdweka.entidades.origem.FraseEspecialistaEspecialidade" />
+        <mapping class="conversorbdweka.entidades.origem.HistoricoClinico" />
+        <mapping class="conversorbdweka.entidades.origem.HorarioPlantao" />
+        <mapping class="conversorbdweka.entidades.origem.Laudo" />
+        <mapping class="conversorbdweka.entidades.origem.ModeloConteudoExame" />
+        <mapping class="conversorbdweka.entidades.origem.ModeloHistoricoClinico" />
+        <mapping class="conversorbdweka.entidades.origem.ModeloLaudo" />
+        <mapping class="conversorbdweka.entidades.origem.OrgaoEmissor" />
+        <mapping class="conversorbdweka.entidades.origem.Paciente" />
+        <mapping class="conversorbdweka.entidades.origem.Pais" />
+        <mapping class="conversorbdweka.entidades.origem.PerfilUsuario" />
+        <mapping class="conversorbdweka.entidades.origem.Plantao" />
+        <mapping class="conversorbdweka.entidades.origem.PontoRemoto" />
+        <mapping class="conversorbdweka.entidades.origem.Prioridade" />
+        <mapping class="conversorbdweka.entidades.origem.Status" />
+        <mapping class="conversorbdweka.entidades.origem.TipoConteudoExame" />
+        <mapping class="conversorbdweka.entidades.origem.TipoExame" />
+        <mapping class="conversorbdweka.entidades.origem.TipoLaudo" />
+        <mapping class="conversorbdweka.entidades.origem.Usuario" />
+        
+        <mapping class="conversorbdweka.entidades.origem.LaudoMinnesota" />
+        <mapping class="conversorbdweka.entidades.origem.EcgAnalys" />
+        <mapping class="conversorbdweka.entidades.origem.MinnesotaCode" />
+        <mapping class="conversorbdweka.entidades.origem.MinnesotaDict" />
+        <mapping class="conversorbdweka.entidades.origem.MinnesotaGroup" />
+        <mapping class="conversorbdweka.entidades.origem.ReportEcgAnalys" />
+        
+        
+    </session-factory>
+</hibernate-configuration>

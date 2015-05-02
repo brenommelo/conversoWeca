@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ConversorBdWekaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>conversorbdweka.entidades.origem.Exame</class>
+    <class>conversorbdweka.entidades.origem.DictionaryGriEcgLong</class>
+    <class>conversorbdweka.entidades.origem.Pontoremoto</class>
+    <class>conversorbdweka.entidades.origem.CreditoPlantao</class>
+    <class>conversorbdweka.entidades.origem.Contato</class>
+    <class>conversorbdweka.entidades.origem.Categoria</class>
+    <class>conversorbdweka.entidades.origem.Cliente</class>
+    <class>conversorbdweka.entidades.origem.Laudo</class>
+    <class>conversorbdweka.entidades.origem.Plantao</class>
+    <class>conversorbdweka.entidades.origem.Especialista</class>
+    <class>conversorbdweka.entidades.origem.EcgAnalys</class>
+    <class>conversorbdweka.entidades.origem.Orgaoemissor</class>
+    <class>conversorbdweka.entidades.origem.Envioemail</class>
+    <class>conversorbdweka.entidades.origem.Conteudoexame</class>
+    <class>conversorbdweka.entidades.origem.Perfilusuario</class>
+    <class>conversorbdweka.entidades.origem.Endereco</class>
+    <class>conversorbdweka.entidades.origem.DictionaryGriEcgShort</class>
+    <class>conversorbdweka.entidades.origem.Exameauditoria</class>
+    <class>conversorbdweka.entidades.origem.Discussaocaso</class>
+    <class>conversorbdweka.entidades.origem.Modeloconteudoexame</class>
+    <class>conversorbdweka.entidades.origem.Resultadoauditoria</class>
+    <class>conversorbdweka.entidades.origem.Sincronismo</class>
+    <class>conversorbdweka.entidades.origem.Visualizacao</class>
+    <class>conversorbdweka.entidades.origem.Configuracao</class>
+    <class>conversorbdweka.entidades.origem.Modelohistoricoclinico</class>
+    <class>conversorbdweka.entidades.origem.Interpretations</class>
+    <class>conversorbdweka.entidades.origem.MinnesotaGroup</class>
+    <class>conversorbdweka.entidades.origem.Cidade</class>
+    <class>conversorbdweka.entidades.origem.Tipoexame</class>
+    <class>conversorbdweka.entidades.origem.Tipolaudo</class>
+    <class>conversorbdweka.entidades.origem.MinnCode</class>
+    <class>conversorbdweka.entidades.origem.Modelolaudo</class>
+    <class>conversorbdweka.entidades.origem.Examecorrompido</class>
+    <class>conversorbdweka.entidades.origem.Tipoconteudoexame</class>
+    <class>conversorbdweka.entidades.origem.FraseEspecialistaEspecialidade</class>
+    <class>conversorbdweka.entidades.origem.Historicoclinico</class>
+    <class>conversorbdweka.entidades.origem.Tempolatencia</class>
+    <class>conversorbdweka.entidades.origem.Auditoria</class>
+    <class>conversorbdweka.entidades.origem.MinnesotaDict</class>
+    <class>conversorbdweka.entidades.origem.HorarioPlantao</class>
+    <class>conversorbdweka.entidades.origem.MinnesotaCodes</class>
+    <class>conversorbdweka.entidades.origem.Usuario</class>
+    <class>conversorbdweka.entidades.origem.Pais</class>
+    <class>conversorbdweka.entidades.origem.Estado</class>
+    <class>conversorbdweka.entidades.origem.Prioridade</class>
+    <class>conversorbdweka.entidades.origem.Especialidade</class>
+    <class>conversorbdweka.entidades.origem.Paciente</class>
+    <class>conversorbdweka.entidades.origem.Status</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/TELESSAUDE"/>
+      <property name="javax.persistence.jdbc.password" value="senha"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+    </properties>
+  </persistence-unit>
+</persistence>
