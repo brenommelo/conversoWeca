@@ -20,8 +20,8 @@
         <property name="hibernate.format_sql">false</property>  
         <property name="current_session_context_class">thread</property>    
         
-        <property name="hibernate.hbm2ddl.auto">none</property>
-        <!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+        <!--<property name="hibernate.hbm2ddl.auto">none</property>-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="connection_pool_size">1</property>
         
         <!-- Classes que são mapeadas no hibernate  -->
@@ -65,6 +65,9 @@
         <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.MinnesotaGroup" />
         <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.MinnesotaDict" />
         <mapping class="br.ufmg.hc.telessaude.diagnostico.dominio.glasgow.LaudoMinnesota" />
+        <!--molo weka-->
+        <mapping class="conversorbdweka.weka.ModeloWeka" />
+        <mapping class="conversorbdweka.weka.ModeloWekaCluster" />
         
                       
     </session-factory>

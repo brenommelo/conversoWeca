@@ -38,7 +38,7 @@ public class Laudo extends PojoBase implements Serializable {
     private Date datainicio;
     
     @Column(name = "\"DATAFIM\"")
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date datafim;
     
     @Column(name = "\"ESPECIALISTA\"")

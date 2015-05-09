@@ -1152,3 +1152,30 @@ org.hibernate.MappingException: Unable to find physical table: `ESPECIALISTA`
 br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException
 	at br.ufmg.hc.telessaude.diagnostico.dominio.daoImpl.DaoBase.findAll(DaoBase.java:114)
 	at conversorbdweka.ConversorBdWeka.main(ConversorBdWeka.java:27)
+2015-05-03 21:25:15,779 [main] ERROR br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException:29 - could not insert: [conversorbdweka.weka.ModeloWeka]
+br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException: could not insert: [conversorbdweka.weka.ModeloWeka]
+	at br.ufmg.hc.telessaude.diagnostico.dominio.daoImpl.DaoBase.saveOrUpdate(DaoBase.java:50)
+	at conversorbdweka.ConversorBdWeka.main(ConversorBdWeka.java:52)
+2015-05-03 21:28:00,092 [main] ERROR br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException:29 - could not insert: [conversorbdweka.weka.ModeloWeka]
+br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException: could not insert: [conversorbdweka.weka.ModeloWeka]
+	at br.ufmg.hc.telessaude.diagnostico.dominio.daoImpl.DaoBase.saveOrUpdate(DaoBase.java:50)
+	at conversorbdweka.ConversorBdWeka.main(ConversorBdWeka.java:52)
+2015-05-03 21:30:35,288 [main] ERROR br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException:29 - could not insert: [conversorbdweka.weka.ModeloWeka]
+br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException: could not insert: [conversorbdweka.weka.ModeloWeka]
+	at br.ufmg.hc.telessaude.diagnostico.dominio.daoImpl.DaoBase.saveOrUpdate(DaoBase.java:50)
+	at conversorbdweka.ConversorBdWeka.main(ConversorBdWeka.java:52)
+2015-05-09 12:24:11,885 [main] ERROR br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException:29 - could not insert: [conversorbdweka.weka.ModeloWeka]
+br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException: could not insert: [conversorbdweka.weka.ModeloWeka]
+	at br.ufmg.hc.telessaude.diagnostico.dominio.daoImpl.DaoBase.saveOrUpdate(DaoBase.java:50)
+	at conversorbdweka.ConversorBdWeka.iniciarCarga(ConversorBdWeka.java:85)
+	at conversorbdweka.ConversorBdWeka.main(ConversorBdWeka.java:37)
+2015-05-09 12:24:12,005 [main] ERROR br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException:29 - could not execute query
+br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException: could not execute query
+	at br.ufmg.hc.telessaude.diagnostico.dominio.daoImpl.DaoBase.findAll(DaoBase.java:114)
+	at conversorbdweka.ConversorBdWeka.criarTxt(ConversorBdWeka.java:43)
+	at conversorbdweka.ConversorBdWeka.main(ConversorBdWeka.java:38)
+2015-05-09 14:11:39,525 [main] ERROR br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException:29 - could not insert: [conversorbdweka.weka.ModeloWekaCluster]
+br.ufmg.hc.telessaude.diagnostico.dominio.exceptions.DAOException: could not insert: [conversorbdweka.weka.ModeloWekaCluster]
+	at br.ufmg.hc.telessaude.diagnostico.dominio.daoImpl.DaoBase.saveOrUpdate(DaoBase.java:50)
+	at conversorbdweka.ConversorBdWeka.iniciarCarga(ConversorBdWeka.java:93)
+	at conversorbdweka.ConversorBdWeka.main(ConversorBdWeka.java:39)
